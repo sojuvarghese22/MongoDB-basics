@@ -1,0 +1,69 @@
+Q1.Why is MongoDB a Nosql database
+
+Sol : Because it uses a structured way to store and access data and 
+      because it does not utilize tables, rows and columns to organize data
+Q2. Select the statements that together help build the most complete definition of the MongoDB database
+
+Sol: The MongoDB database is an organized way to store and access data, MongoDB is a NoSQl database that uses documents to store data in an organized way
+
+Q3 In MongoDB how does a document relate to a collection
+
+Sol: Collection consist of one or more documents
+
+Q4 In a MongoDB Document what is the role of fields and values?
+
+Sol: A field is a unique identifier for a specific datapoint, Each field has a value associated with it.
+
+Q5 How is MongoDB Atlas related to MongoDB the Database?
+
+Sol: They are both MongoDB products, Atlas has many tools and services within it that are built specifically for the MongoDB Database
+
+Q6 Which of the following documents is correct JSON?
+
+Sol: {"name" : "Devi", "age": 19, "major": "Computer Science"}
+
+Q7 Which of the following commands will add a collection that is stored in animals.json to an Atlas cluster?
+ 
+Sol: Mongoimport
+
+Q8 In the sample_training.trips collection a person with birth year 1961 took a trip that started at "Howard St & Centre St". What was the end station name for that trip?
+Sol: [
+  {
+    "_id": {
+      "$oid": "572bb8222b288919b68abf5b"
+    },
+    "end station name": "South End Ave & Liberty St"
+  }
+]
+
+Q9 What does it do in the mongo shell?
+
+Sol: Iterates through the cursor result
+
+Q10 Which of the following statements are true about the mongo shell?
+
+sol: It is a fully functioning JavaScript interpreter, It allows you to interact with your MongoDB instance without using a Graphical User Interface
+
+Q11 How does the value of _id get assigned to a document?
+
+Sol: It is automatically generated as an ObjectId type value, You can select a non ObjectId type value when inserting a new document, as long as that value is unique to this collection.
+
+Q12 Insert error, Select all true statements from the following list:
+ Sol: MongoDB can store duplicate documents in the same collection, as long as their _id values are different, If a document is inserted without a provided _id value, then that field and value will be automatically generated for the inserted document before insertion
+
+Q13 Which of the following commands will successfully insert 3 new documents into an empty pets collection?
+ 
+Sol: db.pets.insert([{ "pet": "cat" }, { "pet": "dog" }, { "pet": "fish" }])
+     db.pets.insert([{ "_id": 1, "pet": "cat" },
+                { "_id": 1, "pet": "dog" },
+                { "_id": 3, "pet": "fish" },
+                { "_id": 4, "pet": "snake" }], { "ordered": false })
+     db.pets.insert([{ "_id": 1, "pet": "cat" },
+                { "_id": 2, "pet": "dog" },
+                { "_id": 3, "pet": "fish" },
+                { "_id": 3, "pet": "snake" }])
+
+Q14: MongoDB has a flexible data model, which means that you can have fields that contain documents, or arrays as their values.
+     Select any invalid MongoDB documents from the given choices:
+Sol: None of the above.
+
